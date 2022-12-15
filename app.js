@@ -33,10 +33,10 @@ app.post("/", function(req, res) {
   };
 
   const jsonData = JSON.stringify(data);
-  const url = process.env.URL;
+  const url = "https://us12.api.mailchimp.com/3.0/lists/" + process.env.URL;
   const options = {
     method: "POST",
-    auth: process.env.AUTH
+    auth: process.env.MC_APIKEY
   }
 
   const request = https.request(url, options, function(response) {
@@ -67,6 +67,9 @@ app.listen(process.env.PORT || 3000, function() {
 
 
 
+// 1aef156aa1b617233b6821fb26e80970-us12
+
+// e9f2bfa437
 
 //TO UPDATE
 
