@@ -65,17 +65,3 @@ app.post("/failure", function(req, res) {
 app.listen(process.env.PORT || 3000, function() {
   console.log("New server up!");
 });
-
-
-
-// 1aef156aa1b617233b6821fb26e80970-us12
-
-// e9f2bfa437
-
-//TO UPDATE
-
-/*
-git add .
-git commit -m ""
-git push heroku master
-*/
